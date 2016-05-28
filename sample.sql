@@ -55,3 +55,7 @@ select users.name,users.address from users union all select companies.name, comp
 -- １番目はouter join なので 結合に失敗したレコードは省かれず、NULLで返ってきている
 select * from users left join companies on users.company_id = companies.id and companies.address = 'TOKYO';
 select * from users left join companies on users.company_id = companies.id where companies.address = 'TOKYO';
+
+-- 固定値
+-- 列名を指定すれば１回のselectで大丈夫だが、*に追加するスマートな方法はないか？
+select * from users join (select users.id, 'test' as a from users) as tmp USING(id)

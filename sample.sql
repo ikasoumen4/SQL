@@ -46,7 +46,7 @@ select * from users cross join companies where users.id = companies.id;
 -- distinctはデフォルトの動作
 -- 重複を取得したい場合はallを指定します。
 select users.name,users.address from users union select companies.name, companies.address from companies;
-select users.name,users.address from users union distinct (select companies.name, companies.address from companies);
+select users.name,users.address from users union distinct select companies.name, companies.address from companies;
 select users.name,users.address from users union all select companies.name, companies.address from companies;
 
 

@@ -16,3 +16,15 @@
 　ハイパフォーマンス
 - デュアルライセンス
 - データは水平パーティ初認具され　行ごとにノードグループに振り分けられる（レプリケーション対応）
+
+DDL,DMLなど主なＳＱＬ文 DCL??
+http://www.bnote.net/mysql/appendix_sql.shtml
+
+Data Define Language
+Data Manipulation Language (Manipulation 取り扱い)
+Data Control Language
+→ GRANT　（権限の付加）
+→ REVOKE　（権限の剥奪）
+→ COMMIT　（変更の確定）
+→ ROLLBACK　（変更の取り消し）
+→ SAVEPOINT　（トランザクション中のポインタ）　など
